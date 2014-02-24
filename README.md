@@ -1,6 +1,13 @@
 # SetTimeZone
 
-TODO: Write a gem description
+Set the Current Time Zone in accordance to the User's Location.
+
+Include this line in application.html.erb 
+<%= hidden_field_tag :timezone %>
+
+And before the body tag place this
+<%= SetTimeZone::set_cookie.html_safe %>
+
 
 ## Installation
 
