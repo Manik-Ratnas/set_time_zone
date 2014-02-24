@@ -2,12 +2,15 @@
 
 Set the Current Time Zone in accordance to the User's Location.
 
-Include this line in application.html.erb 
-<%= hidden_field_tag :timezone %>
-
+<pre>Include this line in application.html.erb 
+</pre>
+<code><%= hidden_field_tag :timezone %>
+</code>
+<pre>
 And before the body tag place this
-<%= SetTimeZone::set_cookie.html_safe %>
-
+</pre>
+<code><%= SetTimeZone::set_cookie.html_safe %>
+</code>
 refresh the view and check for a cookie named time_zone for users current time zone
 
 ## Installation
@@ -25,16 +28,18 @@ Or install it yourself as:
     $ gem install set_time_zone
 
 ## Usage
-
+<pre>
 Go to your Controller
-use @time_zone = cookies[:time_zone]
-on call of the method
-eg.
+use </pre>
+<code>@time_zone = cookies[:time_zone]</code>
+<pre>on call of the method
+eg.</pre>
+<code>
 before_filter :time_zone
 def time_zone
 @time_zone = cookies[:time_zone]
 end
-
+</code>
 ## Contributing
 
 1. Fork it ( http://github.com/<my-github-username>/set_time_zone/fork )
