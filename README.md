@@ -10,9 +10,9 @@ Set the Current Time Zone in accordance to the User's Location.
 And before the body tag place this
 </pre>
 <code><%= SetTimeZone::set_cookie.html_safe %>
-</code>
+</code><pre>
 refresh the view and check for a cookie named time_zone for users current time zone
-
+</pre>
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -36,9 +36,11 @@ use </pre>
 eg.</pre>
 <code>
 before_filter :time_zone
+
 def time_zone
 @time_zone = cookies[:time_zone]
 end
+
 </code>
 ## Contributing
 
