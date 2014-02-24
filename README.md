@@ -8,6 +8,7 @@ Include this line in application.html.erb
 And before the body tag place this
 <%= SetTimeZone::set_cookie.html_safe %>
 
+refresh the view and check for a cookie named time_zone for users current time zone
 
 ## Installation
 
@@ -25,7 +26,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Go to your Controller
+use @time_zone = cookies[:time_zone]
+on call of the method
+eg.
+before_filter :time_zone
+def time_zone
+@time_zone = cookies[:time_zone]
+end
 
 ## Contributing
 
