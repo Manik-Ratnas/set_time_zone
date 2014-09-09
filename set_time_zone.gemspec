@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Arpit Kulshrestha"]
   spec.email         = ["speak2arpit@gmail.com"]
   spec.summary       = %q{set the current Time zone in Application as per users current location.}
-  spec.description   = %q{Time Zone Setter}
+  spec.description   = %q{Set the Time Zone As per users current location / Browser Time}
   spec.homepage      = ""
   spec.license       = "MIT"
 
