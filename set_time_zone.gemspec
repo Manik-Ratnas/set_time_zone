@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["speak2arpit@gmail.com"]
   spec.summary       = %q{set the current Time zone in Application as per users current location.}
   spec.description   = %q{Set the Time Zone As per users current location / Browser Time}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/Arpit1989"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
